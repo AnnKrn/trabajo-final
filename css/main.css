@@ -1,0 +1,24 @@
+div {
+  border: 1px solid black;
+}
+
+header > h1 {
+  font-size: 50px;
+}
+
+#logo {
+  height: 55px;
+  width: 320px;
+}
+
+#principal_menu > li {
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-float {
+  clear: both;
+}
