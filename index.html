@@ -2,55 +2,116 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Laboratoria Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
-    <title>Data Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
   </head>
   <body>
-    <header>
-      <!--Logo-->
-      <img id="logo" class="float-right" src="assets/images/logoLab.png" alt="logo">
-      <!--Saludos-->
-      <h1>Buenos días, ...</h1>
-    </header>
-  <!--Menú principal-->
-    <ul id="principal_menu">
-      <li>Estudiantes</li>
-      <li>Staff</li>
+    <section id="sidebar">
+  <div class="white-label">
+  </div>
+  <div id="sidebar-nav">
+    <ul>
+      <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fa fa-desktop"></i> Laboratoria</a></li>
+      <li><a href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i> Estudiantes</a></li>
+      <li><a href="#"><i class="fa fa-pencil-square-o"></i> Stafs</a></li>
+      <li><a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></i> Calificaciones</a></li>
+      <li><a href="#"><i class="fa fa-line-chart"></i> Reporte</a></li>
+      <li><a href="#"><i class="fa fa-comments-o"></i> Educación continua</a></li>
+      <li><a href="#"><i class="fa fa-map-marker"></i> Encuestas</a></li>
+      <li><a href="#"><i class="fa fa-users"></i> Profesores/Jedis</a></li>
+      <li><a href="#"><i class="fa fa-calendar-o"></i> Profiles</a></li>
+      <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
     </ul>
-    <!--Sección de datos únicos-->
-    <section>
-      <!--Selector-->
-      <!--Alumnas inscritas-->
-      <div class="">
+  </div>
+</section>
+<section id="content">
+  <div id="header">
+    <div class="header-nav">
+      <div class="menu-button">
+        <!--<i class="fa fa-navicon"></i>-->
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="nav-settings">
+            <div class="font-icon"><i class="fa fa-tasks"></i></div>
+          </li>
+          <li class="nav-mail">
+            <div class="font-icon"><i class="fa fa-envelope-o"></i></div>
+          </li>
+          <li class="nav-calendar">
+            <div class="font-icon"><i class="fa fa-calendar"></i></div>
+          </li>
+          <li class="nav-chat">
+            <div class="font-icon"><i class="fa fa-comments-o"></i></div>
+          </li>
+          <li class="nav-profile">
+            <div class="nav-profile-image">
+              <img src="assets/images/avatar.png" alt="avatar-img" alt="profile image">
+              <div class="nav-profile-name">Amalia<i class="fa fa-caret-down"></i></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-header">
+      <h1>Dashboard</h1>
+      <p>Bienvenida Amalia.</p>
+    </div>
+    <div class="widget-box sample-widget">
+      <div class="widget-header">
+        <h2>Indice de deserción</h2>
+        <i class="fa fa-cog"></i>
+      </div>
+      <div class="widget-content">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/87118/sample-data-1.png">
+      </div>
+    </div>
+    <div class="widget-box sample-widget">
+      <div class="widget-header">
+        <h2>Promedio de calificaciones</h2>
+        <i class="fa fa-cog"></i>
+      </div>
+<<<<<<< HEAD
+      <!--grafica lineal-->
+      <div style="width: 300px;">
+        <canvas id="lineChart" width="300" height="300"></canvas>
+=======
+      <div class="widget-content">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/87118/sample-data-1.png">
+>>>>>>> 8bf837671ef95efd74b65f16d733e7c227730556
+      </div>
+    </div>
+    <div class="widget-box sample-widget">
+      <div class="widget-header">
+        <h2>Promedio técnico</h2>
+        <i class="fa fa-cog"></i>
+      </div>
+      <div class="widget-content">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/87118/sample-data-1.png">
+      </div>
+    </div>
+      <div class="widget-box sample-widget">
+      <div class="widget-header">
+        <h2>Promedio HSE</h2>
+        <i class="fa fa-cog"></i>
+      </div>
+      <div class="widget-content">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/87118/sample-data-1.png">
+      </div>
+    </div>
+  </div>
+</section>
+<<<<<<< HEAD
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+<script type="text/javascript" src="js/app.js">
 
-      </div>
-      <!--Titulo alumnas inscritas-->
-      <div class="">
-        <p></p>
-      </div>
-      <!--Deserción-->
-      <div class="">
+</script>
+=======
 
-      </div>
-      <!--Titulo desercion-->
-      <div class="">
-        <p></p>
-      </div>
-      <!--icono de transición-->
-      <span></span>
-    </section>
-
-    <!--Sección de datos historicos-->
-    <section>
-      <!--titulo datos historicos-->
-      <div class="">
-        <p></p>
-      </div>
-      <!--grafico datos historicos-->
-      <div class="">
-
-      </div>
-
-    </section>
+>>>>>>> 8bf837671ef95efd74b65f16d733e7c227730556
   </body>
 </html>
