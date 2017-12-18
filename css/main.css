@@ -123,6 +123,7 @@ div.user-image {
   background: #e0ba33;
 }
 .nav-profile-image img {
+  background-color: white;
   width: 39px;
   height: 41px;
   border-radius: 50%;
