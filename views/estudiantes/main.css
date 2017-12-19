@@ -275,10 +275,30 @@
    color: #ffffff;
    display: inline-block;
  }
- .sample-widget {max-width: 47%;}
+ .sample-widget {
+   max-width: 47%;
+ }
+
  .widget-box .fa-cog {
    float: right;
    color: #fff;
    margin: 11px 11px 0 0;
    font-size: 20px;
  }
+
+/*clases añadidas a divContainer*/
+.coder {
+  height: 300px;
+  width: 350px;
+  display: inline-block;
+  background-color: white;
+  margin: 10px 15px;
+}
+
+.photo-coder {
+  background-color: black;
+}
+
+.coder-line {
+  display: inline-block;
+}

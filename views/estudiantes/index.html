@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Laboratoria Dashboard</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+  </head>
+  <body>
+    <section id="sidebar">
+  <div class="white-label">
+  </div>
+  <div id="sidebar-nav">
+    <ul>
+      <li><a href="../../index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fa fa-desktop"></i> Laboratoria</a></li>
+      <li class="active"><a><i class="fa fa-address-card-o" aria-hidden="true"></i> Estudiantes</a></li>
+      <li><a href="#"><i class="fa fa-pencil-square-o"></i> Stafs</a></li>
+      <li><a href="#"><i class="fa fa-check-square" aria-hidden="true"></i></i> Calificaciones</a></li>
+      <li><a href="#"><i class="fa fa-line-chart"></i> Reporte</a></li>
+      <li><a href="#"><i class="fa fa-comments-o"></i> Educación continua</a></li>
+      <li><a href="#"><i class="fa fa-map-marker"></i> Encuestas</a></li>
+      <li><a href="#"><i class="fa fa-users"></i> Profesores/Jedis</a></li>
+      <li><a href="#"><i class="fa fa-calendar-o"></i> Profiles</a></li>
+      <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
+    </ul>
+  </div>
+</section>
+<section id="content">
+  <div id="header">
+    <div class="header-nav">
+      <div class="menu-button">
+        <!--<i class="fa fa-navicon"></i>-->
+      </div>
+      <div class="nav">
+        <ul>
+          <li class="nav-settings">
+            <div class="font-icon"><i class="fa fa-tasks"></i></div>
+          </li>
+          <li class="nav-mail">
+            <div class="font-icon"><i class="fa fa-envelope-o"></i></div>
+          </li>
+          <li class="nav-calendar">
+            <div class="font-icon"><i class="fa fa-calendar"></i></div>
+          </li>
+          <li class="nav-chat">
+            <div class="font-icon"><i class="fa fa-comments-o"></i></div>
+          </li>
+          <li class="nav-profile">
+            <div class="nav-profile-image">
+              <img src="C:\Users\Joy Love\Documents\laboratoria\sprint2\data-dashboard\assets\images\avatar.png" alt="avatar-img" alt="profile image">
+              <div class="nav-profile-name">Amalia<i class="fa fa-caret-down"></i></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content-header">
+      <h1>Estudiantes</h1>
+      <p>Datos de Estudiantes.</p>
+    </div>
+    <select id="filtro" class="students-data" onchange="seleccionarOpcion(event)">
+      <option>Selecciona una opción</option>
+      <option value="arequipa5" data-sede="AQP" data-generacion="2017-1">Arequipa. Quinta generación</option>
+      <option value="arequipa5" data-sede="AQP" data-generacion="2016-2">Arequipa. Cuarta generación</option>
+      <option value="cdmx5" data-sede="CDMX" data-generacion="2017-1">CDMX. Quinta generación</option>
+      <option value="cdmx4" data-sede="CDMX" data-generacion="2017-2">CDMX. Cuarta generación</option>
+      <option value="lima5" data-sede="LIM" data-generacion="2016-2">Lima. Quinta generación</option>
+      <option value="lima4" data-sede="LIM" data-generacion="2017-1">Lima. Cuarta generación</option>
+      <option value="lima3" data-sede="LIM" data-generacion="2017-2">Lima. Tercera generación</option>
+      <option value="chile5" data-sede="SCL" data-generacion="2016-2">Chile. Quinta generación</option>
+      <option value="chile4" data-sede="SCL" data-generacion="2017-1">Chile. Cuarta generación</option>
+      <option value="chile3" data-sede="SCL" data-generacion="2017-2">Chile. Tercera generación</option>
+    </select>
+    <section id="profile-student">
+      <!--arquitetura de coders-->
+    <!--  <div class="image-student">
+        <img src="http://lorempixel.com/200/200/people/" alt="" class="photo-coder">
+        <p>Nombre de estudiante</p>
+        <p>Especialización</p>
+
+        <div class="average-tech">
+          <span>Average</span>
+          <span>tech</span>
+        <div class="averge-hse">
+          <span>Average</span>
+          <span>HSE</span>
+        <div class="inglish">
+          <span>Level</span>
+          <span>idioma</span>
+        </div>
+        </div>
+      </div>-->
+      </div>
+    </section>
+</section>
+		<!-- Base de datos -->
+		<script src="../../js/data.js"></script>
+		<!-- Aquí va tus archivos JS -->
+
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
