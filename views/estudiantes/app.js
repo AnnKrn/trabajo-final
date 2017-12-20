@@ -9,6 +9,7 @@ var seleccionarOpcion = function(event) {
   //ingresa a array
   for(var i = 0; i < estudiantes.length; i += 1){
     var score = estudiantes[i]['sprints']
+    var photoCoder = estudiantes[i]['photo']
     //variable para obtener array de score Tech
     var arrayScoreTech = [];
     for (var j = 0; j < score.length; j += 1){
@@ -67,19 +68,26 @@ var seleccionarOpcion = function(event) {
     var divContainerTech = document.createElement('div');
     var divContainer = document.createElement('div');
 
-    photoElement.src = 'http://lorempixel.com/200/200/people/';
+    photoElement.src = photoCoder;
     //añade clase a la imagen
     photoElement.classList.add('photo-coder');
     //añade clase al divContainer
-    divContainer.classList.add('coder');
+    divContainer.classList.add('container');
     //parrafoNombre.classList.add('coder-line');
     parrafoNombre.innerText = nombre;
+    parrafoNombre.classList.add('title');
     //parrafoActive.innerText = active;
     parrafoScoreTechName.innerText = "Tech Skills"
-    parrafoScoreTech.innerText = promedioScoreTechRound;
+    parrafoScoreTechName.classList.add('title');
+    parrafoScoreTech.innerText = promedioScoreTechRound + '%';
+    parrafoScoreTech.classList.add('number');
+
     parrafoScoreHSEName.innerText = "HSE Skills"
-    parrafoScoreHSE.innerText = promedioScoreHSERound;
-    console.log(parrafoScoreHSE)
+    parrafoScoreHSEName.classList.add('title');
+    parrafoScoreHSE.innerText = promedioScoreHSERound + '%';
+    parrafoScoreHSE.classList.add('number');
+
+    //console.log(parrafoScoreHSE)
 
     //appendChild a div contenedor
     divContainer.appendChild(parrafoNombre);
@@ -88,9 +96,12 @@ var seleccionarOpcion = function(event) {
 
     divContainerTech.appendChild(parrafoScoreTechName);
     divContainerTech.appendChild(parrafoScoreTech);
+    divContainerTech.classList.add('left');
 
     divContainerHSE.appendChild(parrafoScoreHSEName);
     divContainerHSE.appendChild(parrafoScoreHSE);
+    divContainerHSE.classList.add('right');
+
 
     divContainer.appendChild(divContainerTech);
     divContainer.appendChild(divContainerHSE);

@@ -89,8 +89,18 @@ var seleccionarOpcion = function(event) {
   divContainerActive.appendChild(pTitleActive);
   divContainerActive.appendChild(pNumberActive);
 
+  divContainerActive.classList.add('container');
+  divContainerActive.classList.add('left');
+  pTitleActive.classList.add('title');
+  pNumberActive.classList.add('number');
+
   divContainerInactive.appendChild(pTitleInactive);
   divContainerInactive.appendChild(pNumberInactive);
+
+  divContainerInactive.classList.add('container');
+  divContainerInactive.classList.add('right');
+  pTitleInactive.classList.add('title');
+  pNumberInactive.classList.add('number');
 
   //padre section
   principalSection.appendChild(divContainerActive);
@@ -98,17 +108,3 @@ var seleccionarOpcion = function(event) {
 
 
 }
-
-
-
-/*
-var allData = data['AQP']['2016-2']['students'];
-console.log(allData)
-for (var i in allData) {
-  var sede = [i]
-  console.log(sede)
-}
-
-
-var activas = data['AQP']['2016-2']['students'][0]['active'];
-console.log(activas)*/
