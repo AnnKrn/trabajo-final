@@ -4,12 +4,7 @@ var seleccionarOpcion = function(event) {
   var generacion = event.target[indiceOpcion].dataset.generacion;
   //ingresa a la data
   var estudiantes = data[sede][generacion]['students'];
-  /*var score = data[sede][generacion]['students'][0]['sprints']
-  console.log(score)
-  for (var j = 0; j < score.length; j += 1){
-    var scoreTech = score[j].score.tech;
-    console.log(scoreTech)
-  }*/
+
   document.getElementById('profile-student').innerHTML = '';
   //ingresa a array
   for(var i = 0; i < estudiantes.length; i += 1){
@@ -56,6 +51,8 @@ var seleccionarOpcion = function(event) {
     var nombre = estudiantes[i].name;
     var photo = estudiantes[i].photo;
     var active = estudiantes[i].active;
+
+    console.log(active)
 
     //Elementos de DOM
     var profileStudent = document.getElementById('profile-student');
